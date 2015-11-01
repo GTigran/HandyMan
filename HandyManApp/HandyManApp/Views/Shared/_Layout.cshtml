@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/favicon.png">
+    <title>@ViewBag.Title - Glendale Handyman</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body class="m-fixed-header">
+    <!-- WRAPPER : begin -->
+    <div id="wrapper">
+        <!-- HEADER : begin -->
+        <header id="header">
+            <div class="header-inner">
+                <div class="container">
+                    <!-- HEADER BRANDING : begin -->
+                    <div class="header-branding">
+                        <div class="branding-inner"> 
+                            <!-- BRANDING LOGO : begin -->
+                            <div class="brading-logo">
+                                <a href="/Home/Index"><img src="@Url.Content("~/Content/images/logo.png")" data-hires="Content/images/logo.2x.png" alt="Glendale Handyman"></a>
+                            </div>
+                            <!-- BRANDING LOGO : end -->
+                            <!-- BRANDING INFO : begin -->
+                            <div class="brading-info">
+                                <strong>Your Glendale</strong><br>
+                                <em>Handyman</em>
+                            </div>
+                            <!-- BRANDING INFO : end -->
+                        </div>
+                    </div>
+                    <!-- HEADER BRANDING : end -->
+                    <!-- NAVIGATION TOGGLE : begin -->
+                    <button class="header-navigation-toggle" type="button"><i class="fa fa-bars"></i></button>
+                    <!-- NAVIGATION TOGGLE : end -->
+                    <!-- HEADER NAVIGATION : begin -->
+                    <div class="header-navigation">
+                        <div class="navigation-inner">
+
+                            <!-- HEADER MENU : begin -->
+                            <nav class="header-menu">
+                                <ul>
+                                    <li class="m-active m-has-submenu">
+                                        <a href="/Home/Index`">Home</a>
+                                    </li>
+                                    <li class="m-has-submenu">
+                                        <a href="@Url.Content("~/Home/About")">About Us</a>
+                                    </li>
+                                    <li class="m-has-submenu">
+                                        <a href="@Url.Content("~/Services/Index")">Services</a>
+                                        <ul>
+                                            <li><a href="service-list.html">Service List</a></li>
+                                            <li><a href="service-detail.html">Service Detail</a></li>
+                                        </ul>
+                                        <button class="submenu-toggle" type="button"><i></i></button>
+                                    </li>
+                                    <li class="m-last"><a href="@Url.Content("~/Home/Contact")">Contact</a></li>
+                                </ul>
+                            </nav>
+                            <!-- HEADER MENU : end -->
+                        </div>
+                    </div>
+                    <!-- HEADER NAVIGATION : end -->
+
+                </div>
+            </div>
+        </header>
+    <!-- HEADER : end -->
+        @RenderBody()
+
+        <!-- FOOTER : begin -->
+        <div id="footer" class="m-parallax" style="display: block;">
+            <!-- FOOTER INNER : begin -->
+            <div class="footer-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-md-push-6">
+
+                            <!-- FOOTER MENU : begin -->
+                            <nav class="footer-menu">
+                                <ul>
+                                    <li><a href="@Url.Content("~/Home/Index")">Home</a></li>
+                                    <li><a href="@Url.Content("~/Home/About")">About Us</a></li>
+                                    <li><a href="@Url.Content("~/Services/Services")">Services</a></li>
+                                    <li><a href="@Url.Content("~/Home/Contact")">Contacts</a></li>
+                                </ul>
+                            </nav>
+                            <!-- FOOTER MENU : end -->
+
+                        </div>
+                        <div class="col-md-6 col-md-pull-6">
+
+                            <!-- FOOTER TEXT : begin -->
+                            <div class="footer-text">
+                                <p>
+                                    &copy; GlendaleHandyman.com<BR/>
+                                    All Rights Reserved
+                                </p>
+                            </div>
+                            <!-- FOOTER TEXT : end -->
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- FOOTER INNER : end -->
+
+        </div>
+        <!-- FOOTER : end -->
+
+    </div>
+    <!-- WRAPPER : END -->
+    
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/templatejs")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

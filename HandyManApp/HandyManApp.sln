@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandyMan.Web.MVC", "HandyManApp\HandyMan.Web.MVC.csproj", "{7E6F37C2-678E-4955-BBFD-0186FD61CA0E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{1DCF1312-E479-4514-A184-477225FCBDED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandyMan.Core", "HandyMyApp.Core\HandyMan.Core.csproj", "{A2E0C1BE-F8F9-44AC-A7FA-F80A52AB64E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{8D9EC13D-83EA-4151-8926-27C90CC943C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{C5129446-803B-4A81-8DDA-F1F64BA0218D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandyMan.BusinessObjects", "HandyMan.BusinessObjects\HandyMan.BusinessObjects.csproj", "{CB8AFD4F-6B12-48CE-9F68-397204D07C2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandyMan,DataAccess.EF", "HandyMan,DataAccess\HandyMan,DataAccess.EF.csproj", "{2328ED10-37A6-4626-8840-339157A339AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandyMan.Common", "HandyMan.Common\HandyMan.Common.csproj", "{B6E31AA1-8179-44BF-879E-680A7E66D924}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandyMan.Web.Common", "HandyMan.Web.Common\HandyMan.Web.Common.csproj", "{DBA7A643-32CD-48F0-91B0-79E5FF64E562}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E6F37C2-678E-4955-BBFD-0186FD61CA0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E6F37C2-678E-4955-BBFD-0186FD61CA0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E6F37C2-678E-4955-BBFD-0186FD61CA0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E6F37C2-678E-4955-BBFD-0186FD61CA0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2E0C1BE-F8F9-44AC-A7FA-F80A52AB64E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2E0C1BE-F8F9-44AC-A7FA-F80A52AB64E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2E0C1BE-F8F9-44AC-A7FA-F80A52AB64E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2E0C1BE-F8F9-44AC-A7FA-F80A52AB64E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB8AFD4F-6B12-48CE-9F68-397204D07C2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB8AFD4F-6B12-48CE-9F68-397204D07C2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB8AFD4F-6B12-48CE-9F68-397204D07C2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB8AFD4F-6B12-48CE-9F68-397204D07C2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2328ED10-37A6-4626-8840-339157A339AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2328ED10-37A6-4626-8840-339157A339AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2328ED10-37A6-4626-8840-339157A339AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2328ED10-37A6-4626-8840-339157A339AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6E31AA1-8179-44BF-879E-680A7E66D924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6E31AA1-8179-44BF-879E-680A7E66D924}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6E31AA1-8179-44BF-879E-680A7E66D924}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6E31AA1-8179-44BF-879E-680A7E66D924}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBA7A643-32CD-48F0-91B0-79E5FF64E562}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBA7A643-32CD-48F0-91B0-79E5FF64E562}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBA7A643-32CD-48F0-91B0-79E5FF64E562}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBA7A643-32CD-48F0-91B0-79E5FF64E562}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7E6F37C2-678E-4955-BBFD-0186FD61CA0E} = {C5129446-803B-4A81-8DDA-F1F64BA0218D}
+		{A2E0C1BE-F8F9-44AC-A7FA-F80A52AB64E3} = {1DCF1312-E479-4514-A184-477225FCBDED}
+		{CB8AFD4F-6B12-48CE-9F68-397204D07C2D} = {1DCF1312-E479-4514-A184-477225FCBDED}
+		{2328ED10-37A6-4626-8840-339157A339AA} = {1DCF1312-E479-4514-A184-477225FCBDED}
+		{B6E31AA1-8179-44BF-879E-680A7E66D924} = {8D9EC13D-83EA-4151-8926-27C90CC943C2}
+		{DBA7A643-32CD-48F0-91B0-79E5FF64E562} = {C5129446-803B-4A81-8DDA-F1F64BA0218D}
+	EndGlobalSection
+EndGlobal

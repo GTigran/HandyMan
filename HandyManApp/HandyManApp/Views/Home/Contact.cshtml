@@ -1,0 +1,180 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+<div id="core">
+
+    <!-- PAGE TITLE : begin -->
+    <div id="page-title" class="m-parallax">
+
+        <!-- PAGE TITLE TOP : begin -->
+        <div class="page-title-top" style="display: block; background-position: 50% 0px;">
+            <div class="page-title-top-inner">
+
+                <!-- PAGE TITLE TEXT : begin -->
+                <div class="page-title-text">
+                    <div class="container">
+                        <h1>Contacts</h1>
+                    </div>
+                </div>
+                <!-- PAGE TITLE TEXT : end -->
+
+            </div>
+        </div>
+        <!-- PAGE TITLE TOP : end -->
+        <!-- PAGE TITLE BOTTOM : begin -->
+        <div class="page-title-bottom">
+            <div class="container">
+                <div class="page-title-bottom-inner">
+                    <div class="page-title-bottom-inner2">
+
+                        <!-- PAGE TITLE BREADCRUMBS : begin -->
+                        <div class="page-title-breadcrumbs">
+                            <ul>
+                                <li><a href="/Home/Index">Home</a></li>
+                                <li>Contact</li>
+                            </ul>
+                        </div>
+                        <!-- PAGE TITLE BREADCRUMBS : end -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- PAGE TITLE BOTTOM : end -->
+
+    </div>
+    <!-- PAGE TITLE : end -->
+
+    <div class="container">
+
+        <!-- PAGE CONTENT : begin -->
+        <div id="page-content">
+
+            <div class="row">
+                <div class="col-md-4">
+
+                    <!-- ICON BLOCK : begin -->
+                    <div class="c-icon-block">
+                        <i class="im im-compass"></i>
+                        <h3>Our HQ</h3>
+                        <p>
+                            8833 Sunset Boulevard<br>
+                            Ca 90069<br>
+                        </p>
+                    </div>
+                    <!-- ICON BLOCK : end -->
+
+                    <hr class="c-divider">
+
+                    <!-- ICON BLOCK : begin -->
+                    <div class="c-icon-block">
+                        <i class="im im-clock2"></i>
+                        <h3>Opening Hours</h3>
+                        <p>
+                            <strong>Mon. - Fri.:</strong> 7am - 5pm<br>
+                            <strong>Weekend:</strong> Closed
+                        </p>
+                    </div>
+                    <!-- ICON BLOCK : end -->
+
+                    <hr class="c-divider">
+
+                    <!-- ICON BLOCK : begin -->
+                    <div class="c-icon-block">
+                        <i class="im im-phone"></i>
+                        <h3>24/7 Support</h3>
+                        <p>
+                            (123) 456 789<br>
+                            <a href="#">handyman@bluecollar.com</a>
+                        </p>
+                    </div>
+                    <!-- ICON BLOCK : end -->
+
+                    <hr class="c-divider m-transparent hidden-lg hidden-md">
+
+                </div>
+                <div class="col-md-8">
+
+                    <!-- GOOGLE MAP : begin -->
+                    <!-- If you specify the "data-address" attribute, "data-latitude" and "data-longitude" are optional -->
+                    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="642" height="443" src="https://maps.google.com/maps?hl=en&q=618 E Acacia Ave, Glendale, CA&ie=UTF8&t=roadmap&z=15&iwloc=B&output=embed"><div><small><a href="http://embedgooglemaps.com">embed google maps here</a></small></div><div><small><a href="http://embedgooglemaps.com">embed google maps here</a></small></div></iframe>
+                    <!-- GOOGLE MAP : end -->
+
+                </div>
+            </div>
+
+            <hr class="c-divider m-size-medium">
+
+            <h2>Get More Info, <strong>Request a Quote</strong> or Just Say Hi</h2>
+
+            <!-- CONTACT FORM : begin -->
+            <form id="contact-form" class="default-form m-ajax-form" action="ajax/contact-form.php" method="post">
+                <input type="hidden" name="contact-form">
+
+                <!-- FORM VALIDATION ERROR MESSAGE : begin -->
+                <p class="c-alert-message m-warning m-validation-error" style="display: none;"><i class="ico fa fa-exclamation-circle"></i>Please fill in all required (*) fields.</p>
+                <!-- FORM VALIDATION ERROR MESSAGE : end -->
+                <!-- SENDING REQUEST ERROR MESSAGE : begin -->
+                <p class="c-alert-message m-warning m-request-error" style="display: none;"><i class="ico fa fa-exclamation-circle"></i>There was a connection problem. Try again later.</p>
+                <!-- SENDING REQUEST ERROR MESSAGE : end -->
+
+                <div class="row">
+                    <div class="col-sm-4">
+
+                        <!-- NAME FIELD : begin -->
+                        <div class="form-field">
+                            <label for="contact-name">Your Name <span>*</span></label>
+                            <input id="contact-name" name="contact-name" class="m-required">
+                        </div>
+                        <!-- NAME FIELD : end -->
+                        <!-- EMAIL FIELD : begin -->
+                        <div class="form-field">
+                            <label for="contact-email">Your Email Address <span>*</span></label>
+                            <input id="contact-email" name="contact-email" class="m-required m-email">
+                        </div>
+                        <p style="display: none;">
+                            <label for="contact-email-hp">Re Email Address</label>
+                            <input id="contact-email-hp" name="contact-email-hp">
+                        </p>
+                        <!-- EMAIL FIELD : end -->
+                        <!-- PHONE FIELD : begin -->
+                        <div class="form-field">
+                            <label for="contact-phone">Your Phone Number</label>
+                            <input id="contact-phone" name="contact-phone">
+                        </div>
+                        <!-- PHONE FIELD : end -->
+
+                    </div>
+                    <div class="col-sm-8">
+
+                        <!-- SUBJECT FIELD : begin -->
+                        <div class="form-field">
+                            <label for="contact-subject">Message Subject</label>
+                            <input id="contact-subject" name="contact-subject">
+                        </div>
+                        <!-- SUBJECT FIELD : end -->
+                        <!-- MESSAGE FIELD : begin -->
+                        <div class="form-field">
+                            <label for="contact-message">Message <span>*</span></label>
+                            <textarea id="contact-message" name="contact-message" class="m-required"></textarea>
+                        </div>
+                        <!-- MESSAGE FIELD : end -->
+                        <!-- SUBMIT BUTTON : begin -->
+                        <div class="form-field">
+                            <button class="submit-btn c-button" type="submit" data-label="Send Message" data-loading-label="Sending...">Send Message</button>
+                        </div>
+                        <!-- SUBMIT BUTTON : end -->
+
+                    </div>
+                </div>
+
+            </form>
+            <!-- CONTACT FORM : end -->
+
+        </div>
+        <!-- PAGE CONTENT : end -->
+
+    </div>
+
+</div>
